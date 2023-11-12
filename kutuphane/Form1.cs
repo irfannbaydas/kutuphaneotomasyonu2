@@ -13,6 +13,7 @@ namespace kutuphane
 {
     public partial class Kütüphane : Form
     {
+        kutuphaneEntities db = new kutuphaneEntities();
         public Kütüphane()
         {
             InitializeComponent();
@@ -22,6 +23,11 @@ namespace kutuphane
         {
             string gelenAd = adGiristxt.Text;
             string gelenSifre = sifreGiristxt.Text;
+
+            //linq sorgusu 
+
+            var personel = db.personeller.Where()
+
             {
                 if (gelenAd.Equals("admin"))
                 {
