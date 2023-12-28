@@ -24,15 +24,20 @@ namespace kutuphane
             string gelenAd = adGiristxt.Text;
             string gelenSifre = sifreGiristxt.Text;
 
-            //linq sorgusu 
+      
 
-            var personel = db.personeller.Where()
+         
 
             {
                 if (gelenAd.Equals("admin"))
                 {
                     MessageBox.Show(text:"Başarılı");
+                    IslemPaneli panel = new IslemPaneli();
+                    panel.Show();
+                    this.Hide();
+
                 }
+              
                
                 
             }
