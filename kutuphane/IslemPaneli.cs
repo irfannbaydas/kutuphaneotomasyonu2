@@ -21,10 +21,31 @@ namespace kutuphane
         {
 
         }
+        private void IslemPaneli_Load(object sender, EventArgs e)
+        {
+            Kullanicieklebtn.Visible = false;
+            Kullaniciguncellebtn.Visible = false;
+            Kullanicisilbtn.Visible = false;
+        }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (Kullanicieklebtn.Visible == false)
+            {
+                Kullanicieklebtn.Visible = true;
+                Kullaniciguncellebtn.Visible = true;
+                Kullanicisilbtn.Visible = true;
+            }
 
+            else
+            {
+                Kullanicieklebtn.Visible = false;
+                Kullaniciguncellebtn.Visible = false;
+                Kullanicisilbtn.Visible = false;
+            }
+        }
+
+       
         }
     }
-}
+
