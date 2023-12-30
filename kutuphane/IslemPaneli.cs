@@ -19,33 +19,41 @@ namespace kutuphane
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+          
         }
         private void IslemPaneli_Load(object sender, EventArgs e)
         {
-            Kullanicieklebtn.Visible = false;
+            kuleklebtn.Visible = false;
             Kullaniciguncellebtn.Visible = false;
             Kullanicisilbtn.Visible = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (Kullanicieklebtn.Visible == false)
+            if (kuleklebtn.Visible == false)
             {
-                Kullanicieklebtn.Visible = true;
+                kuleklebtn.Visible = true;
                 Kullaniciguncellebtn.Visible = true;
                 Kullanicisilbtn.Visible = true;
             }
 
             else
             {
-                Kullanicieklebtn.Visible = false;
+                kuleklebtn.Visible = false;
                 Kullaniciguncellebtn.Visible = false;
                 Kullanicisilbtn.Visible = false;
             }
-        }
+            kullanicilarform klisteform=new kullanicilarform();
+            klisteform.MdiParent = this;
+            klisteform.Show();
+            }
 
-       
+        private void kuleklebtn_Click(object sender, EventArgs e)
+        {
+            kullaniciekleform ekleform = new kullaniciekleform();
+            ekleform.MdiParent = this;
+            ekleform.Show();
         }
+    }
     }
 

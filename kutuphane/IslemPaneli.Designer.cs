@@ -32,23 +32,23 @@
             this.kullanicipanel = new System.Windows.Forms.Panel();
             this.Kullanicisilbtn = new System.Windows.Forms.Button();
             this.Kullaniciislembtn = new System.Windows.Forms.Button();
-            this.Kullanicieklebtn = new System.Windows.Forms.Button();
             this.Kullaniciguncellebtn = new System.Windows.Forms.Button();
             this.kullaniciblgipanel = new System.Windows.Forms.Panel();
+            this.kuleklebtn = new System.Windows.Forms.Button();
             this.kullanicipanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // kullanicipanel
             // 
             this.kullanicipanel.BackColor = System.Drawing.Color.DarkOrange;
+            this.kullanicipanel.Controls.Add(this.kuleklebtn);
             this.kullanicipanel.Controls.Add(this.Kullanicisilbtn);
             this.kullanicipanel.Controls.Add(this.Kullaniciislembtn);
-            this.kullanicipanel.Controls.Add(this.Kullanicieklebtn);
             this.kullanicipanel.Controls.Add(this.Kullaniciguncellebtn);
             this.kullanicipanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.kullanicipanel.Location = new System.Drawing.Point(0, 0);
             this.kullanicipanel.Name = "kullanicipanel";
-            this.kullanicipanel.Size = new System.Drawing.Size(176, 450);
+            this.kullanicipanel.Size = new System.Drawing.Size(176, 640);
             this.kullanicipanel.TabIndex = 0;
             // 
             // Kullanicisilbtn
@@ -82,21 +82,6 @@
             this.Kullaniciislembtn.UseVisualStyleBackColor = false;
             this.Kullaniciislembtn.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Kullanicieklebtn
-            // 
-            this.Kullanicieklebtn.BackColor = System.Drawing.Color.Gainsboro;
-            this.Kullanicieklebtn.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.75F, System.Drawing.FontStyle.Bold);
-            this.Kullanicieklebtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Kullanicieklebtn.Image = ((System.Drawing.Image)(resources.GetObject("Kullanicieklebtn.Image")));
-            this.Kullanicieklebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Kullanicieklebtn.Location = new System.Drawing.Point(0, 82);
-            this.Kullanicieklebtn.Name = "Kullanicieklebtn";
-            this.Kullanicieklebtn.Size = new System.Drawing.Size(176, 82);
-            this.Kullanicieklebtn.TabIndex = 3;
-            this.Kullanicieklebtn.Text = "            Kullanıcı Ekle";
-            this.Kullanicieklebtn.UseVisualStyleBackColor = false;
-            this.Kullanicieklebtn.Click += new System.EventHandler(this.button3_Click);
-            // 
             // Kullaniciguncellebtn
             // 
             this.Kullaniciguncellebtn.BackColor = System.Drawing.Color.Gainsboro;
@@ -118,19 +103,31 @@
             this.kullaniciblgipanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.kullaniciblgipanel.Location = new System.Drawing.Point(176, 0);
             this.kullaniciblgipanel.Name = "kullaniciblgipanel";
-            this.kullaniciblgipanel.Size = new System.Drawing.Size(624, 59);
+            this.kullaniciblgipanel.Size = new System.Drawing.Size(929, 59);
             this.kullaniciblgipanel.TabIndex = 1;
+            // 
+            // kuleklebtn
+            // 
+            this.kuleklebtn.Location = new System.Drawing.Point(0, 82);
+            this.kuleklebtn.Name = "kuleklebtn";
+            this.kuleklebtn.Size = new System.Drawing.Size(176, 85);
+            this.kuleklebtn.TabIndex = 5;
+            this.kuleklebtn.Text = "Kullanıcı Ekle";
+            this.kuleklebtn.UseVisualStyleBackColor = true;
+            this.kuleklebtn.Click += new System.EventHandler(this.kuleklebtn_Click);
             // 
             // IslemPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1105, 640);
             this.Controls.Add(this.kullaniciblgipanel);
             this.Controls.Add(this.kullanicipanel);
-            this.ForeColor = System.Drawing.SystemColors.Control;
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.IsMdiContainer = true;
             this.Name = "IslemPaneli";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IslemPaneli";
             this.Load += new System.EventHandler(this.IslemPaneli_Load);
             this.kullanicipanel.ResumeLayout(false);
@@ -142,9 +139,9 @@
 
         private System.Windows.Forms.Panel kullanicipanel;
         private System.Windows.Forms.Panel kullaniciblgipanel;
-        private System.Windows.Forms.Button Kullanicieklebtn;
         private System.Windows.Forms.Button Kullaniciguncellebtn;
         private System.Windows.Forms.Button Kullaniciislembtn;
         private System.Windows.Forms.Button Kullanicisilbtn;
+        private System.Windows.Forms.Button kuleklebtn;
     }
 }

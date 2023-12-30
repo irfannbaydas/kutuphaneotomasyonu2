@@ -24,25 +24,20 @@ namespace kutuphane
             string gelenAd = adGiristxt.Text;
             string gelenSifre = sifreGiristxt.Text;
 
-      
-
-         
-
             {
                 if (gelenAd.Equals("admin"))
                 {
-                    MessageBox.Show(text:"Başarılı");
+                    
                     IslemPaneli panel = new IslemPaneli();
                     panel.Show();
                     this.Hide();
 
                 }
-              
-               
                 
             }
-        }
-        private void label1_Click(object sender, EventArgs e)
+
+                }
+                private void label1_Click(object sender, EventArgs e)
         {
 
         }

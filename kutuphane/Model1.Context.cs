@@ -26,5 +26,7 @@ namespace kutuphane
         }
     
         public virtual DbSet<personeller> personeller { get; set; }
+        public virtual DbSet<Kullanici> Kullanici { get; set; }
+        public virtual DbSet<kulveri> kulveri { get; set; }
     }
 }
