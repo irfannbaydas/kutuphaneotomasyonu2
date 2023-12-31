@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IslemPaneli));
             this.kullanicipanel = new System.Windows.Forms.Panel();
+            this.kuleklebtn = new System.Windows.Forms.Button();
             this.Kullanicisilbtn = new System.Windows.Forms.Button();
             this.Kullaniciislembtn = new System.Windows.Forms.Button();
             this.Kullaniciguncellebtn = new System.Windows.Forms.Button();
             this.kullaniciblgipanel = new System.Windows.Forms.Panel();
-            this.kuleklebtn = new System.Windows.Forms.Button();
             this.kullanicipanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +51,19 @@
             this.kullanicipanel.Size = new System.Drawing.Size(176, 640);
             this.kullanicipanel.TabIndex = 0;
             // 
+            // kuleklebtn
+            // 
+            this.kuleklebtn.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 13.75F, System.Drawing.FontStyle.Bold);
+            this.kuleklebtn.Image = ((System.Drawing.Image)(resources.GetObject("kuleklebtn.Image")));
+            this.kuleklebtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.kuleklebtn.Location = new System.Drawing.Point(0, 82);
+            this.kuleklebtn.Name = "kuleklebtn";
+            this.kuleklebtn.Size = new System.Drawing.Size(176, 85);
+            this.kuleklebtn.TabIndex = 5;
+            this.kuleklebtn.Text = "        Kullanıcı Ekle";
+            this.kuleklebtn.UseVisualStyleBackColor = true;
+            this.kuleklebtn.Click += new System.EventHandler(this.kuleklebtn_Click);
+            // 
             // Kullanicisilbtn
             // 
             this.Kullanicisilbtn.BackColor = System.Drawing.Color.Gainsboro;
@@ -62,9 +75,9 @@
             this.Kullanicisilbtn.Name = "Kullanicisilbtn";
             this.Kullanicisilbtn.Size = new System.Drawing.Size(176, 88);
             this.Kullanicisilbtn.TabIndex = 3;
-            this.Kullanicisilbtn.Text = "            Kullanıcı Sil";
-            this.Kullanicisilbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Kullanicisilbtn.Text = "        Kullanıcı Sil";
             this.Kullanicisilbtn.UseVisualStyleBackColor = false;
+            this.Kullanicisilbtn.Click += new System.EventHandler(this.Kullanicisilbtn_Click);
             // 
             // Kullaniciislembtn
             // 
@@ -105,16 +118,6 @@
             this.kullaniciblgipanel.Name = "kullaniciblgipanel";
             this.kullaniciblgipanel.Size = new System.Drawing.Size(929, 59);
             this.kullaniciblgipanel.TabIndex = 1;
-            // 
-            // kuleklebtn
-            // 
-            this.kuleklebtn.Location = new System.Drawing.Point(0, 82);
-            this.kuleklebtn.Name = "kuleklebtn";
-            this.kuleklebtn.Size = new System.Drawing.Size(176, 85);
-            this.kuleklebtn.TabIndex = 5;
-            this.kuleklebtn.Text = "Kullanıcı Ekle";
-            this.kuleklebtn.UseVisualStyleBackColor = true;
-            this.kuleklebtn.Click += new System.EventHandler(this.kuleklebtn_Click);
             // 
             // IslemPaneli
             // 

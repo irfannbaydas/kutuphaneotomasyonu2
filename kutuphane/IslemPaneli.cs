@@ -54,6 +54,13 @@ namespace kutuphane
             ekleform.MdiParent = this;
             ekleform.Show();
         }
+
+        private void Kullanicisilbtn_Click(object sender, EventArgs e)
+        {
+            kulsilform ksil = new kulsilform();
+            ksil.MdiParent = this;
+            ksil.Show();
+        }
     }
     }
 
